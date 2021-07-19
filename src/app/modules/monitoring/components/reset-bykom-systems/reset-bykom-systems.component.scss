@@ -1,0 +1,45 @@
+.general-container{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 5%;
+    justify-content: space-around;
+}
+
+.title{
+    padding-top: 2%;
+}
+
+.container-card{
+    text-align: -webkit-center;
+    text-decoration: none;
+    
+}
+
+.mat-card{
+    transition: .6s;
+    cursor: pointer;
+}
+
+.mat-card:hover{
+    box-shadow: #3f51b5 2px 2px 15px 2px;
+    transform: scale(0.9);
+    
+}
+
+h4{
+    padding: 0%;
+    margin: 0%;
+}
+
+.p-text-icon{
+    margin-left: -12px;
+}
+
+.mat-icon{
+    text-align: center;
+    font-weight: 700;
+}
+
+.app-title-pages{
+    margin-top: 500px;
+}

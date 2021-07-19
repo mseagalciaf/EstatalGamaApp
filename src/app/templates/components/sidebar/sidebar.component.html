@@ -1,0 +1,31 @@
+<mat-nav-list role="list">
+    <div class="container">
+        <div class="container container-items">
+            <div class="div-group-item">
+                <div class="div-title-item">
+                    <h4 class="title-monitoring">MONITOREO</h4>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/snr']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">settings_input_antenna</mat-icon>SNR</a>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/loyalty-panics']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">shield</mat-icon>Panicos Fidelización</a>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/day-to-day']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">light_mode</mat-icon>Día a Día</a>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/issues-central']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">report_problem</mat-icon>Caídas Central</a>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/bykom-systems']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">surround_sound</mat-icon>Receptor y Semáforos</a>
+                </div>
+                <div class="div-content-item">
+                    <a mat-list-item [routerLink]="['/monitoring/monitoring-members']" (click)="sideNav.close()" class="items-sidenav"><mat-icon color="primary">people</mat-icon>Personal de Monitoreo</a>
+                </div>
+                <mat-divider class="title-divider"></mat-divider>
+            </div>
+        </div>
+        
+    </div>
+</mat-nav-list>

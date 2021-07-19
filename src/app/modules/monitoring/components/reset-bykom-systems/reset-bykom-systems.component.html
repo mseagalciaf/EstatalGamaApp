@@ -1,0 +1,42 @@
+<div class="title">
+    <app-title-pages [title]="'Receptor y Semáforos'" class="title"></app-title-pages>
+</div>
+
+<div class="row general-container">
+    <a class="col-6 col-sm-4 container-card" >
+        <mat-card class="col-6 col-sm-3" (click)="changeSystemState('trafficLight')">
+            <div class="col-12" [@myAnimation]="trafficLightState ? 'on' : 'off'" >
+                <span class="p-text-icon">
+                    <mat-icon style="font-size: xx-large;">settings_input_antenna</mat-icon>
+                </span>
+            </div>
+            <div class="col-12" style="padding: 0%; margin: 0%;">
+                <h4>Semáforos</h4>
+            </div>
+        </mat-card>
+    </a>
+    <a class="col-6 col-sm-4 container-card" >
+        <mat-card class="col-6 col-sm-3" (click)="changeSystemState('processor')">
+            <div class="col-12" [@myAnimation]="processorState ? 'on' : 'off'">
+                <span class="p-text-icon">
+                    <mat-icon style="font-size: xx-large;">storage</mat-icon>
+                </span>
+            </div>
+            <div class="col-12" style="padding: 0%; margin: 0%;">
+                <h4>Procesador</h4>
+            </div>
+        </mat-card>
+    </a>
+    <a class="col-6 col-sm-4 container-card" >
+        <mat-card class="col-6 col-sm-3" (click)="changeSystemState('bykom')">
+            <div class="col-12" [@myAnimation]="bykomState ? 'on' : 'off'">
+                <span class="p-text-icon">
+                    <mat-icon style="font-size: xx-large;">radio_button_checked</mat-icon>
+                </span>
+            </div>
+            <div class="col-12" style="padding: 0%; margin: 0%;">
+                <h4>Bykom</h4>
+            </div>
+        </mat-card>
+    </a>
+</div>
